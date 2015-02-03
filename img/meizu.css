@@ -1,0 +1,385 @@
+@charset "utf-8";
+/* CSS Document */
+
+footer p{
+	float:right;
+	padding:20px 10px;
+	color:#666;
+	font-size:0.8em;
+}
+
+footer{
+	border-top:1px solid #ddd;
+}
+
+footer p a{
+	position:relative;
+	top:4px;
+}
+
+
+footer>img{
+	position:relative;
+	top:23px;
+	left:20px;
+}
+
+/*设置article#bot*/
+#bot{
+
+	text-align:center;
+	margin-bottom:52px;
+	padding:65px 0 0 0;
+	border-top:1px solid #ccc;
+}
+
+
+article#bot section{
+	float:left;
+	margin:0 80px;
+}
+
+#bot #innerdiv{
+	display:inline-block;
+}
+
+#bot section p{
+	font-weight:bold;
+}
+
+#bot section li{
+	list-style-type:none;
+	text-align:left;
+	margin:10px 0;
+}
+
+#bot section li a{
+	font-size:0.75em;
+	color:#666;
+	text-decoration:none;
+	display:block;
+}
+
+#bot section li a:hover{
+	color:#03F;
+}
+
+#bot section#kefu{
+	text-align:left;
+}
+
+#bot section#kefu>ul>li{
+	position:relative;
+}
+
+#bot section#kefu>ul>li:first-child span{
+	position:absolute;
+	width:60px;
+	background:#06F;
+	color:#fff;
+	padding:0px 1px;
+	cursor:pointer;
+	top:-2px;
+	margin-left:5px;
+	
+	
+}
+
+#bot section#kefu>ul>li:first-child span:hover{
+	background:#009;
+}
+
+#bot section#kefu li{
+	text-align:center;
+	font-size:13.5px;
+	color:#666;
+	cursor:pointer;
+}
+
+
+
+#bot section#kefu li ul{
+	position:absolute;
+	bottom:-1px;
+	left:90px;
+	border:1px solid #ccc;
+	width:120px;
+	background:#fff;
+	display:none;
+	
+	
+}
+
+#bot section#kefu li ul li{
+	margin:0;
+	padding:8px 0;
+	cursor:pointer;
+}
+
+#bot section#kefu li ul li:hover{
+	background:#03F;
+	color:#FFF;
+}
+/*设置语言*/
+
+#bot section#kefu>ul>li:last-child{
+	border-bottom:1px solid #CCC;
+	border-top:1px solid #ccc;
+	padding:10px 0px;
+}
+
+#bot section#kefu>ul>li:last-child:hover ul{
+	display:block;
+}
+
+#erwei{
+	position:relative;
+	background:#FFF;
+}
+
+#erwei span{
+	position:absolute;
+	top:-174px;
+	left:65px;
+	background-color:#fff;
+	overflow:hidden;
+	width:236px;
+	text-align:center;
+	height:251px;
+	display:none;
+	
+}
+
+img#erweima{
+	position:relative;
+	left:-32px;
+	top:-25px;
+	background:#FFF;
+	
+}
+#erwei:hover span{
+	display:block;
+}
+/*设置mid*/
+#mid{
+	overflow:hidden;
+	text-align:center;
+	padding:20px 0 10px 0;
+}
+
+#mid section{
+	float:left;
+	margin:0 20px;
+}
+
+#mid div#innerdiv2{
+	display:inline-block;
+}
+
+/*设置top*/
+
+
+#top{
+	background-image:url(mx4pro.jpg);
+	background-position:50% 0;
+	height:760px;
+	max-width:100%;
+	min-width:1200px;
+	opacity:1;
+	text-align:center;
+
+	
+	
+}
+
+#innerdiv3 nav{
+	float:right;
+	margin:35px 0 0 0;
+}
+
+#innerdiv3 li{
+	list-style-type:none;
+	float:left;
+}
+
+#innerdiv3 li a{
+	color:#fff;
+	text-decoration:none;
+	font-size:0.85em;
+	padding:0 22px;
+	opacity:1;
+	
+}
+
+#innerdiv3 li a.fontcolor{
+	color:#000;
+}
+
+#innerdiv3 li a:hover{
+	color:#0FF;
+}
+
+nav#login li{
+	padding:0 5px;
+	
+	border-right:1px solid #fff;
+	opacity:1;
+	
+}
+
+nav#login li a{
+	padding:0;
+	font-size:0.75em;
+}
+
+nav#login li:last-child{
+	border:0;
+}
+
+nav#login{
+	margin:35px 150px 0 30px;
+}
+
+#innerdiv3{
+	height:60px;
+	position:absolute;
+	overflow:hidden;
+	width:100%;
+	opacity:1;
+	z-index:8;
+	top:0;
+}
+
+li#xialp div div{
+	float:left;
+	margin:0 20px;
+}
+
+li#xialp{
+	position:relative;
+}
+
+li#xialp div#innerdiv4{
+	position:absolute;
+	overflow:hidden;
+	width:450px;
+	text-align:center;
+	top:50px;
+	left:-105px;
+}
+
+div.ball{
+	width:15px;
+	height:15px;
+	border:2px solid #fff;
+
+	border-radius:50%;
+	background:none;
+
+	
+	float:left;
+	margin:10px;
+	cursor:pointer;
+}
+
+.topp div.ball1{
+	background:#fff;
+}
+
+.topp div.wrapball{
+	display:inline-block;
+	margin:0 auto;
+	position:relative;
+	top:715px;
+
+}
+
+
+/*设置按键*/
+
+#top button{
+	font-size:1.7em;
+	background:none;
+	color:#FFF;
+	font-family:"黑体";
+	font-weight:100;
+	padding:10px 20px;
+	cursor:pointer;
+	
+}
+
+#top button.ljie{
+	border:2px solid #FFF;
+}
+
+#top button.yuyue{
+	border:2px solid #09C;
+	background:#09C;
+	margin-left:23px;
+}
+#top div#but{
+	
+	width: 370px;
+margin: 0px 18% 0 62%;
+padding: 452px 0px 0px;
+
+	
+}
+
+#top2{
+	height:760px;
+	width:100%;
+	background:url(1.jpg);
+	background-position:50% 0;
+	position:absolute;
+	top:0;
+	opacity:0;
+	text-align:center;
+	
+}
+
+div#wrapper{
+	min-width:1200px;
+	max-width:100%;
+}
+div#innerdiv3{
+	min-width:1200px;
+	max-width:100%
+}
+
+/*添加小国旗*/
+ul#gb li{
+	position: relative;
+}
+
+ul#gb li div{
+	width: 21px;
+	height: 21px;
+	
+	display: inline-block;
+	position: absolute;
+	left: 15px;
+	background-image: url("footer-language1.png");
+
+}
+
+ul#gb li.f2 div{
+	background-position: -115px 0;
+
+}
+ul#gb li.f3 div{
+	background-position: -23px 0;
+}
+ul#gb li.f4 div{
+	background-position: -138px 0;
+}
+ul#gb li.f5 div{
+	background-position: -46px 0;
+}
+ul#gb li.f6 div{
+	background-position: -69px 0;
+}
+
+ul#gb li span{
+	padding-left: 20px;
+}

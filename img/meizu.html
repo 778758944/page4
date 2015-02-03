@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>meizu</title>
+<!--[if Lt IE 9]>
+	<script src="../js/html5shiv.js"></script>
+<![endif]-->
+<style type="text/css">
+article,aside,dialog,footer,header,section,nav,figure,menu{
+	display: block;
+}
+*{padding:0; margin:0}
+body{
+	font-family:"Microsoft Yahei";
+}
+img{
+	border:0;
+}
+</style>
+<link href="meizu.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<!--[if IE]>
+	<script src="../js/selectivizr.js"></script>
+<![endif]-->
+
+<script>
+/*设置产品下拉*/
+$(function(){
+	$("#xialp").hover(function(){
+		$("#innerdiv3").css("background","#eef")
+		.stop().animate({height:"220px"},500);
+	
+		
+		$("#innerdiv3 li a").addClass("fontcolor");
+	
+		
+
+	},function(){
+		$("#innerdiv3")
+		.stop().animate({height:"60px"},500,function(){
+			$(this).css("background","");
+			$("#innerdiv3 li a").removeClass();
+		});
+	
+	})
+
+	/*设置自动轮播*/
+	
+	var backp=new Array("mx4pro.jpg","1.jpg");
+	
+	$(".ball").click(function(){
+		a=$(".ball").index(this);
+		
+		if(a==2)
+		{
+			$("#top2").animate({opacity:"0"},1000);
+		    $("#top").animate({opacity:"1"},1000);
+			$(".ball:first").css("background","#fff")
+		.siblings().css("background","rgba(0,0,0,0)");
+		
+		
+		}
+		if(a==3)
+		{
+			$("#top").animate({opacity:"0"},1000);
+		$("#top2").animate({opacity:"1"},1000);
+		$(".ball:last").css("background","#fff")
+		.siblings().css("background","rgba(0,0,0,0)");
+		}
+		
+	})
+	
+	
+	
+	var i=0;
+	
+	function changep()
+	{
+		
+		
+		if(i>1)
+		{
+			i=0;
+		}
+		if(i==0)
+		{
+		$("#top").animate({opacity:"0"},3000);
+		$("#top2").animate({opacity:"1"},3000);
+		$(".ball:last").css("background","#fff")
+		.siblings().css("background","rgba(0,0,0,0)");
+			
+		}
+		
+		if(i==1)
+		{
+			$("#top2").animate({opacity:"0"},3000);
+		    $("#top").animate({opacity:"1"},3000);
+			$(".ball:first").css("background","#fff")
+		.siblings().css("background","rgba(0,0,0,0)");
+			
+		}
+
+
+			
+		i++;
+		
+	}
+		
+
+	var timeid=setInterval(changep,8000);
+
+})
+	
+	
+
+
+
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+
+<article id="top" class="topp">
+
+<div class="wrapball">
+<div class="ball ball1"></div><div class="ball"></div>
+</div>
+
+
+<div id="but">
+<button class="ljie">了解详情</button>
+<button class="yuyue">立即预约</button>
+</div>
+</article>
+
+<article id="top2" class="topp">
+
+
+<div class="wrapball">
+<div class="ball ball1"></div><div class="ball"></div>
+</div>
+</article>
+
+
+<div id="innerdiv3">
+
+
+<nav id="login">
+<ul>
+<li><a href="#">登录</a></li>
+<li><a href="#">注册</a></li>
+</ul>
+</nav>
+
+<nav id="mainnav">
+<ul>
+<li><a href="#">在线商店</a></li>
+<li id="xialp"><a href="#">产品</a>
+<div id="innerdiv4">
+<div><img src="mx4.png" alt="mx4"/><p>MX4</p></div>
+<div><img src="mx3.png" alt="mx3"><p>MX3</p></div>
+<div><img src="mx2.png" alt="mx2"><p>MX2</p></div>
+</div>
+</li>
+<li><a href="#">专卖店</a></li>
+<li><a href="#">Flyme</a></li>
+<li><a href="#">服务</a></li>
+<li><a href="#">社区</a></li>
+</ul>
+</nav>
+
+
+</div>
+
+
+
+<article id="mid">
+<div id="innerdiv2">
+<section id="mx3">
+<a href="#"><img src="mid1.jpg" alt="mx3"/></a>
+</section>
+
+<section id="flyme">
+<a href="#"><img src="mid2.jpg"/></a>
+</section>
+
+
+<section id="mx4">
+<a href="#"><img src="mid3.jpg"></a>
+
+</section>
+</div>
+
+</article>
+
+
+<article id="bot">
+<div id="innerdiv">
+<section>
+<p>在线商店</p>
+<ul>
+<li><a href="#">MX4</a></li>
+<li><a href="#">MX3</a></li>
+<li><a href="#">EP-30耳机</a></li>
+<li><a href="#">多彩后壳</a></li>
+</ul>
+</section>
+
+
+<section>
+<p>Flyme OS</p>
+<ul>
+<li><a href="#">云服务</a></li>
+<li><a href="#">固件下载</a></li>
+<li><a href="#">软件商店</a></li>
+<li><a href="#">查找手机</a></li>
+</ul>
+</section>
+
+<section>
+<p>关于我们</p>
+<ul>
+<li><a href="#">关于魅族</a></li>
+<li><a href="#">加入我们</a></li>
+<li><a href="#">联系我们</a></li>
+<li><a href="#">法律声明</a></li>
+</ul>
+</section>
+
+<section>
+<p>关注我们</p>
+<ul>
+<li><a href="#">新浪微博</a></li>
+<li><a href="#">腾讯微博</a></li>
+<li><a href="#">QQ空间</a></li>
+<li id="erwei"><a href="#">官方微信</a><span><img id="erweima"  src="weixin_1.jpg" alt="erweima"/></span></li>
+
+</ul>
+</section>
+
+<section id="kefu">
+<p>客服热线</p>
+<ul>
+<li>400-788-3333<span>在线客服</span></li>
+<li>简体中文
+<ul id="gb">
+<li class="f1"><div></div><span>繁体中文</span></li>
+<li class="f2"><div></div><span>台湾繁体</span></li>
+<li class="f3"><div></div><span>English</span></li>
+<li class="f4"><div></div><span>Deutsch</span></li>
+<li class="f5"><div></div><span>俄罗斯文</span></li>
+<li class="f6"><div></div><span>以色列语</span></li>
+</ul>
+</li>
+
+</ul>
+</section>
+
+</div>
+
+
+</article>
+
+
+<footer>
+<img src="footer-logo.jpg" alt="footer-logo">
+<p>©2014 Meizu Telecom Equipment Co., Ltd. All rights reserved. &nbsp;&nbsp;备案号：粤ICP备13003602号-2&nbsp;&nbsp;经营许可证编号：粤B2-20130198&nbsp;&nbsp;营业执照&nbsp;&nbsp;<a href="#"><img src="footer-copy-1.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="footer-copy-2.png"/></a></p>
+
+</footer>
+</div>
+</body>
+</html>
